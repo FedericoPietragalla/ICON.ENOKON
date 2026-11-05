@@ -1,0 +1,1123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://example.org/enokon/wine">
+    <rdfs:label xml:lang="it">ENOKON - ontologia del vino</rdfs:label>
+    <rdfs:comment xml:lang="it">Conoscenza di background per la classificazione della qualità del vino (vinho verde, UCI Wine Quality). Generata da ontology/build_ontology.py.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://example.org/enokon/wine#Vino">
+    <rdfs:label xml:lang="it">Vino</rdfs:label>
+    <rdfs:comment xml:lang="it">Campione di vino descritto da misure chimiche e dal punteggio sensoriale.</rdfs:comment>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#aciditaFissa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">acidità fissa</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#aciditaVolatile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">acidità volatile</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#acidoCitrico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">acido citrico</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#zuccheriResidui">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">zuccheri residui</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#cloruri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">cloruri</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#so2Libera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">SO2 libera</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: mg/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#so2Totale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">SO2 totale</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: mg/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#densita">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">densità</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/cm3</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#ph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">pH</rdfs:label>
+    <rdfs:comment xml:lang="it">Adimensionale.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#solfati">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">solfati</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: g/L</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#gradoAlcolico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdfs:label xml:lang="it">grado alcolico</rdfs:label>
+    <rdfs:comment xml:lang="it">Unità di misura: % vol</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#tipoVino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    <rdfs:label xml:lang="it">tipo di vino</rdfs:label>
+    <rdfs:comment xml:lang="it">Valori ammessi: 'rosso', 'bianco'.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/enokon/wine#punteggioQualita">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+    <rdfs:domain rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+    <rdfs:label xml:lang="it">punteggio di qualità</rdfs:label>
+    <rdfs:comment xml:lang="it">Punteggio sensoriale (mediana di 3+ degustatori).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.org/enokon/wine#TipoVino">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">TipoVino</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloAciditaFissa">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloAciditaFissa</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloAciditaVolatile">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloAciditaVolatile</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloAcidoCitrico">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloAcidoCitrico</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloZuccherino">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloZuccherino</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloCloruri">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloCloruri</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloSO2Libera">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloSO2Libera</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloSO2Totale">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloSO2Totale</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloEnologico">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloEnologico</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloDensita">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloDensita</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloPH">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloPH</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloSolfati">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloSolfati</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#ProfiloAlcolico">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">ProfiloAlcolico</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#QualitaVino">
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#Vino" />
+    <rdfs:label xml:lang="it">QualitaVino</rdfs:label>
+    <rdfs:comment xml:lang="it">Classe di raggruppamento (superclasse dei concetti omonimi).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoRosso">
+    <rdfs:label xml:lang="it">Vino rosso.</rdfs:label>
+    <rdfs:comment xml:lang="it">tipoVino = "rosso". Tipologia indicata nel dataset.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#TipoVino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#tipoVino" />
+            <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosso</owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoBianco">
+    <rdfs:label xml:lang="it">Vino bianco.</rdfs:label>
+    <rdfs:comment xml:lang="it">tipoVino = "bianco". Tipologia indicata nel dataset.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#TipoVino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#tipoVino" />
+            <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bianco</owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AciditaFissaBassa">
+    <rdfs:label xml:lang="it">Vino poco acido.</rdfs:label>
+    <rdfs:comment xml:lang="it">acidità fissa ∈ (-∞, 6.0) g/L. Soglia empirica: meno freschezza e minore stabilità.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAciditaFissa" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#aciditaFissa" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AciditaFissaAlta">
+    <rdfs:label xml:lang="it">Vino molto acido.</rdfs:label>
+    <rdfs:comment xml:lang="it">acidità fissa ∈ [8.5, +∞) g/L. Soglia empirica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAciditaFissa" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#aciditaFissa" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileBassa">
+    <rdfs:label xml:lang="it">Fermentazione e conservazione pulite.</rdfs:label>
+    <rdfs:comment xml:lang="it">acidità volatile ∈ (-∞, 0.3) g/L. Acido acetico ben al di sotto della soglia di percezione.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAciditaVolatile" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#aciditaVolatile" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileElevata">
+    <rdfs:label xml:lang="it">Spunto acetico (difetto).</rdfs:label>
+    <rdfs:comment xml:lang="it">acidità volatile ∈ [0.6, +∞) g/L. Oltre ~0.6 g/L l'acido acetico diventa percepibile (nota di aceto/solvente): soglia sensoriale di uso comune, inferiore al limite di legge.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAciditaVolatile" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#aciditaVolatile" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AcidoCitricoBasso">
+    <rdfs:label xml:lang="it">Poco acido citrico.</rdfs:label>
+    <rdfs:comment xml:lang="it">acido citrico ∈ (-∞, 0.15) g/L. Soglia empirica: minore freschezza aromatica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAcidoCitrico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#acidoCitrico" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AcidoCitricoElevato">
+    <rdfs:label xml:lang="it">Molto acido citrico.</rdfs:label>
+    <rdfs:comment xml:lang="it">acido citrico ∈ [0.5, +∞) g/L. Soglia empirica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAcidoCitrico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#acidoCitrico" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#Secco">
+    <rdfs:label xml:lang="it">Vino secco.</rdfs:label>
+    <rdfs:comment xml:lang="it">zuccheri residui ∈ (-∞, 4.0] g/L. Indicazione di dolcezza UE: secco fino a 4 g/L (versione semplificata, senza la compensazione con l'acidità).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloZuccherino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#zuccheriResidui" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</xsd:maxInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#Abboccato">
+    <rdfs:label xml:lang="it">Vino abboccato (semisecco).</rdfs:label>
+    <rdfs:comment xml:lang="it">zuccheri residui ∈ (4.0, 12.0] g/L. Da 4 a 12 g/L (indicazione di dolcezza UE).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloZuccherino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#zuccheriResidui" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</xsd:minExclusive>
+                  </rdf:Description>
+                  <rdf:Description>
+                    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</xsd:maxInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#Amabile">
+    <rdfs:label xml:lang="it">Vino amabile o dolce.</rdfs:label>
+    <rdfs:comment xml:lang="it">zuccheri residui ∈ (12.0, +∞) g/L. Oltre 12 g/L: le classi UE 'amabile' (12-45) e 'dolce' (&gt;45) sono unite perché i vini dolci sono poco rappresentati nel dataset.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloZuccherino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#zuccheriResidui" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</xsd:minExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#CloruriBassi">
+    <rdfs:label xml:lang="it">Basso contenuto salino.</rdfs:label>
+    <rdfs:comment xml:lang="it">cloruri ∈ (-∞, 0.05) g/L. Soglia empirica sul contenuto salino.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloCloruri" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#cloruri" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#CloruriElevati">
+    <rdfs:label xml:lang="it">Alto contenuto salino.</rdfs:label>
+    <rdfs:comment xml:lang="it">cloruri ∈ [0.1, +∞) g/L. Soglia empirica sul contenuto salino.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloCloruri" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#cloruri" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaBassa">
+    <rdfs:label xml:lang="it">SO2 libera insufficiente.</rdfs:label>
+    <rdfs:comment xml:lang="it">SO2 libera ∈ (-∞, 15.0) mg/L. Protezione scarsa da ossidazione e microrganismi (soglia di uso comune).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSO2Libera" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#so2Libera" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaAdeguata">
+    <rdfs:label xml:lang="it">SO2 libera nell'intervallo di lavoro abituale.</rdfs:label>
+    <rdfs:comment xml:lang="it">SO2 libera ∈ [15.0, 50.0] mg/L. Protezione adeguata senza note pungenti.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSO2Libera" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#so2Libera" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</xsd:minInclusive>
+                  </rdf:Description>
+                  <rdf:Description>
+                    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</xsd:maxInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaAlta">
+    <rdfs:label xml:lang="it">SO2 libera eccessiva.</rdfs:label>
+    <rdfs:comment xml:lang="it">SO2 libera ∈ (50.0, +∞) mg/L. Oltre ~50 mg/L la solforosa libera è percepibile all'olfatto (odore pungente).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSO2Libera" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#so2Libera" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</xsd:minExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleOltre150">
+    <rdfs:label xml:lang="it">SO2 totale sopra 150 mg/L.</rdfs:label>
+    <rdfs:comment xml:lang="it">SO2 totale ∈ (150.0, +∞) mg/L. Ausiliaria: limite UE per i vini rossi secchi.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSO2Totale" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#so2Totale" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150.0</xsd:minExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleOltre200">
+    <rdfs:label xml:lang="it">SO2 totale sopra 200 mg/L.</rdfs:label>
+    <rdfs:comment xml:lang="it">SO2 totale ∈ (200.0, +∞) mg/L. Ausiliaria: limite UE per i vini bianchi secchi.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSO2Totale" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#so2Totale" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</xsd:minExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleEccessiva">
+    <rdfs:label xml:lang="it">SO2 totale oltre il limite di legge per la tipologia.</rdfs:label>
+    <rdfs:comment xml:lang="it">(VinoRosso ∧ SO2TotaleOltre150) ∨ (VinoBianco ∧ SO2TotaleOltre200). Limiti UE sull'anidride solforosa totale per vini secchi: 150 mg/L (rossi) e 200 mg/L (bianchi). Versione semplificata: ignora i limiti più alti previsti per i vini con zuccheri residui &gt;= 5 g/L.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://example.org/enokon/wine#VinoRosso" />
+              <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleOltre150" />
+            </owl:intersectionOf>
+          </owl:Class>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://example.org/enokon/wine#VinoBianco" />
+              <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleOltre200" />
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#DensitaBassa">
+    <rdfs:label xml:lang="it">Densità bassa: vino secco e alcolico.</rdfs:label>
+    <rdfs:comment xml:lang="it">densità ∈ (-∞, 0.993) g/cm3. L'alcol abbassa la densità. Soglia empirica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloDensita" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#densita" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.993</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#DensitaAlta">
+    <rdfs:label xml:lang="it">Densità alta: molto estratto e/o zuccheri.</rdfs:label>
+    <rdfs:comment xml:lang="it">densità ∈ [0.997, +∞) g/cm3. Soglia empirica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloDensita" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#densita" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.997</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#PHBasso">
+    <rdfs:label xml:lang="it">pH basso: acidità elevata, vino fresco e stabile.</rdfs:label>
+    <rdfs:comment xml:lang="it">pH ∈ (-∞, 3.2). Convenzione enologica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloPH" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#ph" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#PHMedio">
+    <rdfs:label xml:lang="it">pH nell'intervallo usuale.</rdfs:label>
+    <rdfs:comment xml:lang="it">pH ∈ [3.2, 3.5). Convenzione enologica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloPH" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#ph" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</xsd:minInclusive>
+                  </rdf:Description>
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#PHAlto">
+    <rdfs:label xml:lang="it">pH alto: vino piatto, a rischio di instabilità microbiologica.</rdfs:label>
+    <rdfs:comment xml:lang="it">pH ∈ [3.5, +∞). Con pH alto la solforosa è meno efficace. Convenzione enologica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloPH" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#ph" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SolfatiBassi">
+    <rdfs:label xml:lang="it">Pochi solfati.</rdfs:label>
+    <rdfs:comment xml:lang="it">solfati ∈ (-∞, 0.5) g/L. Soglia empirica (additivo con azione antimicrobica/antiossidante).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSolfati" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#solfati" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#SolfatiAlti">
+    <rdfs:label xml:lang="it">Molti solfati.</rdfs:label>
+    <rdfs:comment xml:lang="it">solfati ∈ [0.75, +∞) g/L. Soglia empirica.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloSolfati" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#solfati" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.75</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AlcolBasso">
+    <rdfs:label xml:lang="it">Vino leggero.</rdfs:label>
+    <rdfs:comment xml:lang="it">grado alcolico ∈ (-∞, 10.0) % vol. Convenzione: sotto 10 % vol.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAlcolico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#gradoAlcolico" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AlcolMedio">
+    <rdfs:label xml:lang="it">Vino di corpo medio.</rdfs:label>
+    <rdfs:comment xml:lang="it">grado alcolico ∈ [10.0, 12.0) % vol. Convenzione: tra 10 e 12 % vol.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAlcolico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#gradoAlcolico" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</xsd:minInclusive>
+                  </rdf:Description>
+                  <rdf:Description>
+                    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</xsd:maxExclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#AlcolAlto">
+    <rdfs:label xml:lang="it">Vino alcolico.</rdfs:label>
+    <rdfs:comment xml:lang="it">grado alcolico ∈ [12.0, +∞) % vol. Convenzione: da 12 % vol, indice di uve molto mature.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloAlcolico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#gradoAlcolico" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#RischioInstabilita">
+    <rdfs:label xml:lang="it">Rischio di instabilità microbiologica/ossidativa.</rdfs:label>
+    <rdfs:comment xml:lang="it">PHAlto ∧ SO2LiberaBassa. Un pH alto con SO2 libera bassa lascia il vino poco protetto (l'efficacia antimicrobica della solforosa cala al crescere del pH).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#PHAlto" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaBassa" />
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoDifettoso">
+    <rdfs:label xml:lang="it">Vino con almeno un difetto analitico.</rdfs:label>
+    <rdfs:comment xml:lang="it">AciditaVolatileElevata ∨ SO2TotaleEccessiva ∨ RischioInstabilita. Spunto acetico, eccesso di solforosa oppure rischio di instabilità.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileElevata" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#SO2TotaleEccessiva" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#RischioInstabilita" />
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoFresco">
+    <rdfs:label xml:lang="it">Vino fresco e leggero.</rdfs:label>
+    <rdfs:comment xml:lang="it">PHBasso ∧ (AlcolBasso ∨ AlcolMedio) ∧ AciditaVolatileBassa. Alta acidità (pH basso), alcol contenuto e assenza di spunto acetico: profilo tipico dei vini bianchi giovani e del vinho verde.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#PHBasso" />
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://example.org/enokon/wine#AlcolBasso" />
+              <owl:Class rdf:about="http://example.org/enokon/wine#AlcolMedio" />
+            </owl:unionOf>
+          </owl:Class>
+          <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileBassa" />
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoEquilibrato">
+    <rdfs:label xml:lang="it">Vino equilibrato.</rdfs:label>
+    <rdfs:comment xml:lang="it">AlcolMedio ∧ AciditaVolatileBassa ∧ SO2LiberaAdeguata ∧ (PHBasso ∨ PHMedio). Alcol medio, acidità volatile bassa, protezione solforosa adeguata e pH usuale.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#AlcolMedio" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileBassa" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaAdeguata" />
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="http://example.org/enokon/wine#PHBasso" />
+              <owl:Class rdf:about="http://example.org/enokon/wine#PHMedio" />
+            </owl:unionOf>
+          </owl:Class>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#VinoMaturoEPulito">
+    <rdfs:label xml:lang="it">Vino da uve mature e ben vinificato.</rdfs:label>
+    <rdfs:comment xml:lang="it">AlcolAlto ∧ AciditaVolatileBassa. Grado alcolico alto (maturità delle uve) senza spunto acetico.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#ProfiloEnologico" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#AlcolAlto" />
+          <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileBassa" />
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#QualitaBassa">
+    <rdfs:label xml:lang="it">Vino di qualità bassa</rdfs:label>
+    <rdfs:comment xml:lang="it">punteggioQualita ∈ [-∞, 5]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#QualitaVino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#punteggioQualita" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#QualitaMedia">
+    <rdfs:label xml:lang="it">Vino di qualità media</rdfs:label>
+    <rdfs:comment xml:lang="it">punteggioQualita ∈ [6, 6]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#QualitaVino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#punteggioQualita" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:minInclusive>
+                  </rdf:Description>
+                  <rdf:Description>
+                    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:maxInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/enokon/wine#QualitaAlta">
+    <rdfs:label xml:lang="it">Vino di qualità alta</rdfs:label>
+    <rdfs:comment xml:lang="it">punteggioQualita ∈ [7, +∞]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/enokon/wine#QualitaVino" />
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://example.org/enokon/wine#Vino" />
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://example.org/enokon/wine#punteggioQualita" />
+            <owl:someValuesFrom>
+              <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer" />
+                <owl:withRestrictions rdf:parseType="Collection">
+                  <rdf:Description>
+                    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:minInclusive>
+                  </rdf:Description>
+                </owl:withRestrictions>
+              </rdfs:Datatype>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#VinoRosso" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#VinoBianco" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#AciditaFissaBassa" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#AciditaFissaAlta" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileBassa" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#AciditaVolatileElevata" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#AcidoCitricoBasso" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#AcidoCitricoElevato" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#Secco" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#Abboccato" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#Amabile" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#CloruriBassi" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#CloruriElevati" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaBassa" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaAdeguata" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#SO2LiberaAlta" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#DensitaBassa" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#DensitaAlta" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#PHBasso" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#PHMedio" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#PHAlto" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#SolfatiBassi" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#SolfatiAlti" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#AlcolBasso" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#AlcolMedio" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#AlcolAlto" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://example.org/enokon/wine#QualitaBassa" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#QualitaMedia" />
+      <owl:Class rdf:about="http://example.org/enokon/wine#QualitaAlta" />
+    </owl:members>
+  </owl:AllDisjointClasses>
+</rdf:RDF>

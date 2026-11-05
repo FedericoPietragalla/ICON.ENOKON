@@ -1,0 +1,12 @@
+numpy>=1.23
+pandas>=1.5
+scipy>=1.7
+scikit-learn>=1.1
+matplotlib>=3.5
+
+# --- opzionali ---------------------------------------------------------------
+# owlready2>=0.45   # solo per ispezionare l'ontologia:  python ontology/build_ontology.py --inspect
+# pytest>=7         # per lanciare i test:               python -m pytest tests -q
+#
+# SWI-Prolog non è un pacchetto pip: installalo da https://www.swi-prolog.org e verifica che
+# `swipl` sia nel PATH. Se manca, la KB viene valutata da un motore Python equivalente.
